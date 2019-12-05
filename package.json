@@ -1,0 +1,20 @@
+{
+  "name": "qa_api_code_test_take_home",
+  "version": "1.0.0",
+  "description": "Automated suite for an interview at Aetna",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "fillData": "node lib/fill_data.js",
+    "dataTest": "mocha suite/avatar_info_test.js",
+    "apiTest": "mocha suite/api_test.js",
+    "fullTest": "npm run fillData && npm run dataTest && npm run apiTest"
+  },
+  "author": "Judah Bolz-Weber",
+  "license": "ISC"
+}
